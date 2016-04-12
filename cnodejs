@@ -1,0 +1,2 @@
+当需要导出一个对象时 exports 和module.exports 均可使用
+当需要导出一个非对象接口时 只能使用 module.exports
