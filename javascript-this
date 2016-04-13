@@ -1,0 +1,28 @@
+this的用法
+1、对象.函数();//函数内的this指向该物件
+例子：
+var obj={
+          x:20,
+          f:function(){
+              console.log(this.x);
+             }
+}
+obj.f(); //f内的this指向obj，则输出为20
+
+obj.innerobj={
+         x:30,
+         f:function(){ console.log(this.x); }
+}
+obj.innerobj.f();//f内的指向obj.innnerobj,则输出为30
+
+2、this指向全局物件
+如果调用函数的前方并未有对象，则函数内的this指向全局对象
+函数();//函数内this指向全局对象
+
+3.this 指向利用call或apply所指派给this的对象
+（A对象.）函数.call(B对象,参数1,参数2,参数3,.....);
+(B对象.)函数.apply(B对象,[参数1,参数2,参数3,.....])
+
+4、this指向new所产生之新物件
+new 函数();//函数内之this指向new所产生的新物件
+5、callback函数的this会指向于调用放入该callback的函数的this所指向之对象
