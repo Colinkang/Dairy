@@ -1,0 +1,35 @@
+1、创建版本库
+初始化git仓库，使用git init命令
+添加文件到git仓库,分为两步:
+第一步:git add <file> 可反复多次使用，添加多个文件
+第二步:git commit -m '说明'
+
+git status 时刻掌握当前仓库当前的状态
+git diff  查看具体修改了什么内容
+
+git log 显示从最近到最远的提交日志
+git log --pretty=oneline
+HEAD表示当前版本 HEAD^表示上一个版本
+git reset --hard HEAD^
+git reset --hard 3628164    commit id
+git reflog 记录每一次命令
+
+git checkout -- file  把file文件在工作区的修改全部撤销
+一种是 file自修改后还没有放到暂存区，现在撤消后就回到跟版本库一样的状态
+一种是 file已经添加到暂存区后，又作了修改，现在撤销修改就回到添加暂存区后的状态
+
+git reset HEAD file 可以把暂存区的修改撤销掉，重新放回工作区
+
+修改和删除工作区的文件 可以使用git checkout -- file "一键还原"
+
+远程仓库
+1、ssh-keygen -t rsa -C "youremail@example.com" 创建SSH Key
+2、用户主目录 .ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。
+第2步：登陆GitHub，打开“Account settings”，“SSH Keys”页面：
+然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容
+
+git remote add origin git@github.com:michaelliao/learngit.git 关联远程仓库
+关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
+
+git clone git@github.com:michaelliao/gitskills.git 从远程库克隆
