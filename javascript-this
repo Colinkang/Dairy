@@ -28,3 +28,4 @@ obj.innerobj.f();//f内的指向obj.innnerobj,则输出为30
 4、this指向new所产生之新物件
 new 函数();//函数内之this指向new所产生的新物件
 5、callback函数的this会指向于调用放入该callback的函数的this所指向之对象
+6、bind绑定对象后，this对象不再改变。与call,apply类似。
