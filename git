@@ -15,12 +15,10 @@ git reset --hard 3628164    commit id
 git reflog 记录每一次命令
 
 git checkout -- file  把file文件在工作区的修改全部撤销
-一种是 file自修改后还没有放到暂存区，现在撤消后就回到跟版本库一样的状态
+一种是 file自修改后还没有放到暂存区，现在撤消后就回到跟版本库一样的状态（修改和删除工作区的文件 可以使用git checkout -- file "一键还原"）
 一种是 file已经添加到暂存区后，又作了修改，现在撤销修改就回到添加暂存区后的状态
 
-git reset HEAD file 可以把暂存区的修改撤销掉，重新放回工作区
 
-修改和删除工作区的文件 可以使用git checkout -- file "一键还原"
 
 远程仓库
 1、ssh-keygen -t rsa -C "youremail@example.com" 创建SSH Key
