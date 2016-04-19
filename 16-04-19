@@ -1,0 +1,52 @@
+文件管理命令
+ls 显示文件名
+cat 显示文件内容
+rm 删除文件
+less 分屏显示文件
+cp 复制文件
+rm 删除文件
+head 显示文件头部
+tail 显示文件尾部
+echo 显示文本
+rmdir 删除目录
+basename 显示文件和目录的基本名称
+dirname 显示文件除名字外的路径
+od 输出文件内容
+wc 输出文件中的行数、单词数、字节数
+
+grep 查找字符串
+sort 按顺序显示文件内容
+uniq 删除文件中的重复行
+diff 比较两个文件
+diffstat diff结果统计信息
+file 测试文件内容
+chattr 改变文件属性
+cmp 比较文件差异
+split 分割文件
+find 查找目录和文件
+findfs 通过列表或用户ID查找文件系统
+ln 链接文件或目录
+lndir 链接目录内容
+lsattr 显示文件属性
+paste 合并文件的列
+awk 模式匹配语言
+xargs 从标准输入读入参数
+tee 读取标准输入到标准输出并可保存为文件
+
+
+
+apropos 搜索关键字
+locate  搜索文件
+
+磁盘管理
+df  显示报告文件系统磁盘使用信息
+du
+dd
+fdisk
+mount
+mkfs
+
+进程管理
+网络管理
+用户管理
+备份文件
