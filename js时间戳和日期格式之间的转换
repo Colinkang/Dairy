@@ -1,0 +1,30 @@
+在谷歌浏览器中可直接调试
+将时间戳转化为日期格式
+var date = new Date(时间戳);//获取一个时间对象 如果是unix时间戳需要乘以1000.
+date.getFullYear();
+date.getMonth(); //获取月份(0-11),0代表1月，用时记得添加1
+date.getDate();  //获取日(1-31);
+date.getTime();  //获取时间(从1970.1.1开始的毫秒数)
+date.getHours(); //获取小时数
+date.getMinutes(); // 获取分钟数
+date.getSeconds();// 获取秒数
+
+var strtime = '2014-04-23 18:55:49:123';
+var date=new Date(strtime);//获取一个时间对象
+将日期格式转化为时间戳
+time1 = date.getTime();
+time2 = date.valueOf();
+time3 = Date.parse(date);
+//三种获取的区别
+//第一、二种会精确到毫秒
+//第三种:只能精确到秒，毫秒将用0来代替
+
+JavaScript的时间是由世界标准时间（UTC）1970年1月1日开始，用毫秒计时，一天由86,400,000毫秒组成。
+Date对象的范围是-100,000,000天至100,000,000天（等效的毫秒值）。
+
+JavaScript的Date对象为跨平台提供了统一的行为。时间属性可以在不同的系统中表示相同的时刻，
+而如果使用了本地时间对象，则反映当地的时间。
+JavaScript 的Date对象提供了数个UTC时间的方法，也相应提供了当地时间的方法。
+UTC，也就是我们所说的格林威治时间，指的是time中的世界时间标准。
+而当地时间则是指执行JavaScript的客户端电脑所设置的时间。
+以一个函数的形式来调用JavaScript的Date对象（i.e., 不使用 new 操作符）会返回一个代表当前日期和时间的字符串。
