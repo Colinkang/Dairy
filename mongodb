@@ -1,0 +1,9 @@
+mongodb基本概念
+https://github.com/qianjiahao/MongoDB
+文档 集合 数据库 shell命令 数据类型
+insert remove
+update
+查询 find findOne
+索引
+聚合
+备份
