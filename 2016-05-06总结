@@ -1,0 +1,46 @@
+1、看源代码
+理解现实中业务逻辑关系
+看源代码中代码难点和重点
+async/await
+2、JavaScript语法 扩展
+闭包  函数  对象
+ES6  类
+jQuery
+Promise迷你书
+3、redis
+键值对
+4、http协议
+5、tcp/ip协议
+6、Linux
+7、nginx
+8、node
+log4js 配置文件的路径
+lodash
+9、算法 数据结构
+链表
+10、微信开发
+openid
+11、架构
+分布式 负载均衡
+12、mongo
+13、mysql
+14、git版本控制
+短选项
+长选项
+git commit -m 'Fixed a typo'
+git commit --message='Fixed a typo'
+裸双破折号 -- 分离一系列参数
+例如：使用 -- 来分离命令行控制部分和操作数部分
+git init
+git status
+git config user.name clare
+git config user.email 820839099@qq.com
+git log 按从最新到最老的顺序罗列出来
+git show commitid 显示提交的详细信息
+git diff commitid1 commitid2 显示两个版本之间的差异
+版本库里删除文件和重命名
+git rm poem.html
+git commit -m 'remove a poem'
+
+git rm poem.html poems.html
+git commit -m 'fix poems.html'
