@@ -1,0 +1,39 @@
+jquery要点
+jquery api http://www.jquery123.com/
+
+ajax
+不需要重新加载整个页面便能向服务器发送请求
+对XML/JSON文档的解析和处理
+$.ajax([settings])
+.done(function(data,textStatus,jqXHR){})
+.fail(function(data,textStatus,jqXHR){})
+.always(function(data,textStatus,jqXHR){})
+settings:
+        data:Object,String类型   发送到服务器的数据
+        dataType:String类型      预期服务器返回的数据类型
+        type:String类型 默认为'get' 请求方式('POST'或者'GET')
+        url:String类型            发送请求的地址
+DOM
+获取和设置页面元素的DOM属性
+.attr(attributeName)  获取匹配的元素集合中的第一个元素的特性的值
+.prop(propertyName)   获取匹配的元素集中第一个元素的属性值
+.attr('checked'):checked
+.prop('checked'):true
+checked特性(attribute)不是对应它的checked属性(property)
+
+val() 获取匹配的元素集合中第一个元素的当前值
+.val()方法主要用于获取表单元素的值 如input select textarea
+
+jQuery() 返回匹配的元素集合
+$(selector,[context])
+还可以是元素、数组、对象、jQuery对象
+
+.on(events [,selector] [,data],handler(eventObject))
+.each(function(index.Element){})遍历一个jQuery对象
+
+丰富的DOM选择器
+链式表达式
+事件 样式 动画支持
+Ajax操作支持
+插件扩展开发
+可扩展性强
