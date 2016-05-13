@@ -1,0 +1,25 @@
+https://github.com/phodal/github-roam
+http://sherlock.phodal.com/
+github
+第一次使用git，配置用户名和邮箱
+git config --global user.name '用户名'
+git config --global user.email '邮箱'
+把代码仓库clone到本地
+git clone git@github.com:Owner/RepositoryName.git
+把所有改动添加到本地仓库
+git add .
+git commit -m 'add'
+
+satrs项目
+库和框架 jQuery
+系统 linux hhvm docker
+配置集 dotfiles
+辅助工具 oh-my-zsh
+工具 homebrew  Bower
+资料收集 free programming books
+https://github.com/justjavac/free-programming-books-zh_CN
+https://github.com/vhf/free-programming-books/blob/master/free-podcasts-screencasts-en.md
+http://growth.phodal.com/
+http://deadhorse.me/extract.html
+http://charlee.li/linux-sysinfo-cmds.html
+https://github.com/liubin/promises-book/
