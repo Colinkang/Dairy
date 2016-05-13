@@ -1,0 +1,56 @@
+sequel 的使用
+数据类型
+日期和时间类型
+
+数字类型
+
+字符集
+char varchar
+
+查询处理
+执行笛卡尔积
+where
+having
+select
+distinct
+order by
+
+子查询
+独立子查询
+相关子查询
+exists
+not exists
+
+联接和集合操作
+联接查询
+cross join
+inner join
+outer join
+natural join
+straight join
+
+集合操作
+union distinct
+union all
+except
+intersect
+
+聚合和旋转操作
+聚合函数
+聚合的算法
+
+事务编程
+
+索引
+
+
+mysql技术内幕:SQL编程
+高性能MySql
+MySql技术内幕:innodb存储引擎
+
+官网  stackoverflow
+infoQ上分享
+http://www.databasejournal.com/features/article.php/3593441/MySQL-Series.htm
+
+
+alter table student convert to character set utf8; 修改字符集

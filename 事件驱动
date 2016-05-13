@@ -1,0 +1,42 @@
+什么是事件驱动
+Nodejs使用事件驱动模型，当web server接收到请求，就把它关闭然后进行处理，然后去服务下一个web请求。
+当这个请求完成，它被放回队列，当到达队列开头，这个结果被返回给用户。webserver一直接收请求而不等待
+任何读写操作。（这也被称为非阻塞式IO或者事件驱动IO）
+
+事件机制的实现
+Event模块(events.EventEmitter)是一个简单的事件监听器模式的实现,具有
+addListener/on,once,removeListener,removeAllListeners,emit等基本事件
+监听模式的方法实现。
+
+事件侦听器模式也是一种事件钩子(hook)的机制，利用事件钩子导出内部数据或状态给外部调用者。
+
+CommonJS javascript规范
+Nodejs始终在事件循环中，程序入口就是事件循环第一个事件的回调函数。事件的回调函数在执行的过程中，可能会发出I/O
+请求或直接发射(emit)事件,执行完毕后再返回事件循环，事件循环会检查事件队列中有没有未处理的事件，直到程序结束。
+
+
+模块是Nodejs应用程序的基本组成部分，文件和模块是一一对应的。
+
+Nodejs提供了exports和require两个对象，其中exports是模块公开的接口，require用于从外部获取一个模块的接口，
+即所获模块的exports对象
+
+对象封装在模块中
+//hello.js
+function Hello(){
+	var name;
+	this.setName=function(thyName){
+	name=thyName;
+	};
+	this.sayHello=function(){
+	console.log('Hello'+name);
+	};
+};
+module.exports=Hello;
+
+//getHello.js
+var Hello=require('./hello');
+hello=new Hello();
+hello.setName('kang');
+hello.sayHello();
+
+process.nextTick(callback);

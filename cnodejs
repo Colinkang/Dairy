@@ -1,3 +1,23 @@
 当需要导出一个对象时 exports 和module.exports 均可使用
 当需要导出一个非对象接口时 就必须覆盖 module.exports
 如何开始nodejs http://stackoverflow.com/questions/2353818/how-do-i-get-started-with-node-js
+
+核心模块 Node.js标准API中提供的模块 如fs http net nvm
+核心模块拥有最高的加载优先级
+文件模块 存储为单独的文件的模块
+加载的方式有两种
+一种按路径加载 一种查找node_modules文件
+如果 require参数以“/”开头，那么就以绝对路径的方式查找模块名称
+例如 require('/home/byvoid/module')将会按照优先级依次尝试加载
+/home/byvoid/module.js、/home/byvoid/module.json、/home/byvoid/module.node
+如果require 参数以'./'或'../'开头，那么则以相对路径查找模块 例如 require('./hello')
+来加载同一文件夹下的hello.js
+
+如果require参数不以“/”、“./”、“../”开头，而该模块又不是核心模块，那么就通过查找
+node_modules加载模块了。
+
+当require遇到一个既不是核心模块，又不是以路径形式表示的模块名称时，会试图在当前
+目录下的node_modules目录下来查找是不是有这样一个模块。如果没有找到，则会在当前目录
+的上一层中的node_modules目录中继续查找，反复执行这一过程，直到根目录为止。
+
+闭包 由函数及其封闭的自由变量组成的集合体。

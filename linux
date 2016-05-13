@@ -1,0 +1,52 @@
+linux
+http://read.pudn.com/downloads143/ebook/625891/linux/linux%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.pdf
+文件管理
+ls -a
+ls -l
+pwd
+cd ..
+cd /
+cd ~或者cd
+mkdir 目录
+rmdir 目录
+rm
+cat
+more
+less
+grep 字符 文件名
+mv
+cp
+find 路径 -name "字符串"
+ln 源文件 链接名 创建当前目录源文件的硬链接
+ln -s a b      创建当前目录下a地符号链接b
+touch file1 file2 创建两个空文件
+磁盘管理
+df
+du
+fdisk
+文件权限
+chmod  chmod u+s file
+chown
+chgrp
+
+用户管理
+useradd
+groupadd
+passwd
+usermod
+groupmod
+userdel
+groupdel
+id 用户名    查用户信息
+
+
+用户权限管理
+进程管理
+fg
+bg
+kill
+crontab
+软件管理
+tar
+diff
+make

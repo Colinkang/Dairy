@@ -1,0 +1,87 @@
+1、Nodejs 事件循环机制                  ok
+2、Express 3 例子实现
+安装 本地安装 npm install express@3
+查看版本 npm info express version
+MVC 模型 视图 控制器
+特点：路由分发、请求处理 、视图渲染
+express3 api
+3、callback hell 回调金字塔
+4、MySQL
+
+5.更改镜像
+sudo npm install nrm -g --dverbose
+nrm use taobao
+
+
+
+20160308的任务
+1、利用Express搭建网站    ok
+2、巩固Linux的基本命令     failed
+3、继续熟悉nodejs开发指南
+4、英语词汇的学习           failed
+
+
+linux 基本命令的巩固
+Express API继续熟悉
+搭建Express+swig博客网站
+安装Linux操作系统
+深化nodejs开发指南
+朴灵对于node的理解和贡献
+
+df -h 查看磁盘
+
+完成微博的初步搭建
+巩固Linux的命令使用
+http协议的巩固
+TCP/IP协议
+brew install mongodb
+在/data/db下 sudo mongod 守护进程
+mongo       启动mongo
+幂等指的是重复多次请求和一次请求的效果是一样的，比如获取和更新操作是幂等的。
+删除也是幂等的，即重复删除一个资源，和删除一次是幂等的。
+get 获取
+post 新增
+put 更新
+delete 删除
+
+express在处理路由规则时，会优先匹配先定义的路由规则，因此后面相同的规则被屏蔽。
+express提供路由控制转移的方法，即回调函数的第三个参数next，通过调用next(),
+会将路由控制权转移给后面的规则。
+
+
+
+1、'use strict' 使用严格的模式，避免出现潜在的漏洞
+2、如果只写模块名
+var greet=require('hello');
+则Node会依次在内置模块、全局模块和当前模块下查找hello.js.
+模块的名字就是文件名(去掉.js后缀)，所以hello.js文件就是名为hello的模块。
+
+一个模块想要对外暴露变量(函数也是变量)，可以用module.exports=variable;
+一个模块要引用其他模块暴露的变量，用var ref=require('module_name');就拿到了引用模块
+的变量。
+要在模块中对外输出变量，用：
+module.exports=variable;
+输出地变量可以是任意对象、函数、数组等等
+要引入其他模块输出地对象，用：
+var foo=require('other_module');
+引入的对象具体是什么，取决于引入模块输出地对象。
+
+模块的输出module.exports怎么实现？
+// 准备module对象:
+var module = {
+    id: 'hello',
+    exports: {}
+};
+var load = function (module) {
+    // 读取的hello.js代码:
+    function greet(name) {
+        console.log('Hello, ' + name + '!');
+    }
+
+    module.exports = greet;
+    // hello.js代码结束
+    return module.exports;
+};
+var exported = load(module);
+// 保存module:
+save(module, exported);
