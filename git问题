@@ -1,0 +1,48 @@
+git是如何存储文件的每个版本的？Git是否每次提交存储整个文件？
+一次提交是由什么组成的？
+那些有趣的提交数据是从哪里来的？
+为什么叫master？
+.git 目录的目的是什么？
+为什么提交ID像乱码？
+Git对象类型有哪几种？
+块(blob) 文件每个版本表示为一个块
+目录树(tree) 代表一层目录信息
+提交(commit) 保存版本库中每一次变化的元数据
+标签(tag) 分配给提交对象一个可读的名字
+
+git中索引的作用
+描述整个版本库的目录结构
+
+git的配置
+版本库的特定设置 .git/config
+用户的特定配置   ~/.gitconfig 可用--global修改
+系统范围内的配置 /etc/gitconfig
+配置提交作者
+git config --global user.name "clare"
+git config --global user.email "820839099@qq.com"
+查看git配置
+git config --list
+
+
+如何初始化版本库
+git init
+将文件添加版本库
+git add
+git status
+git commit
+如何查看提交
+git log
+如何创建版本库副本
+git clone
+
+
+版本库内文件的删除和重命名
+git rm
+git mv
+
+查看差异
+git diff
+查看当前工作目录和暂存区的差异
+查看当前工作目录和版本库的差异
+查看暂存区和版本库的差异
+查看提交之间的差异
