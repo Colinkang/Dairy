@@ -13,7 +13,6 @@ sudo npm install nrm -g --dverbose
 nrm use taobao
 
 
-
 20160308的任务
 1、利用Express搭建网站    ok
 2、巩固Linux的基本命令     failed
