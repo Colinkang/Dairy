@@ -50,3 +50,37 @@ crontab
 tar
 diff
 make
+
+
+
+
+查找 find
+inode和block 文件目录
+磁盘分区 fdisk
+磁盘格式化 mkfs
+磁盘检验 fsck
+磁盘挂载和卸载 mount
+打包 tar
+备份 dump dd  恢复 restore
+shell和shell脚本
+环境编程
+vim编辑器
+切 cut
+取出 grep
+管道
+排序命令 sort wc uniq
+正则表达式
+sed工具
+awk工具
+账号管理
+磁盘配额
+软件磁盘阵列
+逻辑卷管理器
+例行性工作crontab
+进程管理
+ps 进程的查勘
+top 动态查看进程的变化
+free 查看内存使用情况
+uname 查看系统与内存相关信息
+netstat 跟踪网络
+daemon 守护进程
