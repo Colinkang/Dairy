@@ -84,3 +84,6 @@ free 查看内存使用情况
 uname 查看系统与内存相关信息
 netstat 跟踪网络
 daemon 守护进程
+日志：记录系统在什么时候由哪个进程做了什么样的行为时，发生了何种的事件
+make makefile gcc
+makefile 如何写
