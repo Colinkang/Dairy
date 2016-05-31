@@ -1,0 +1,43 @@
+如何搭建一个自己的博客？
+1、需要用到的工具以及语言
+git google redis html5
+node mysql/mongodb
+2、步骤
+设计自己的博客
+创建自己的数据库
+搭建博客框架
+实现相关的功能(实现一个功能并进行单元测试)
+优化后台代码
+实现安全功能
+优化前台界面
+
+
+lofter设计风格
+主要功能:
+发布博客
+博客列表 非登录显示  阅读评论
+        登录后显示 时间 姓名 阅读数 评论 编辑
+        评论主要是一条一条插入数据库，采用mongodb比较好
+评论博客  昵称 邮箱  评论内容
+博客留言
+注册登录功能
+
+
+自动解析markdown文件为html
+
+静态文件
+static
+    css
+    img
+    js
+      lib
+      plugins
+模板文件
+templates
+测试文件
+test
+源文件
+src
+   app
+     moudules
+     index.js
